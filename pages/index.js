@@ -38,7 +38,7 @@ const HomePage = props => {
 
 //only work on page folder components
 //call this function before calling components function
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	// just fetch data here, cause this not run on client
 	const client = await MongoClient.connect(
 		'mongodb+srv://rudu:B2Q0zzLvhzyqFuv5@cluster0.pjcia.mongodb.net/meetups?retryWrites=true&w=majority'
@@ -62,7 +62,6 @@ export const getStaticProps = async () => {
 				id: meetup._id.toString(),
 			})),
 		},
-		revalidate: 10,
 	};
 };
 
