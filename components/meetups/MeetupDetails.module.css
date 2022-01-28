@@ -1,0 +1,23 @@
+.details {
+	max-width: 60rem;
+	margin: 4rem auto 4rem;
+	text-align: center;
+}
+
+.details img {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.details h1 {
+	margin-bottom: 2rem;
+}
+
+.details address {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.details p {
+	font-size: 1.4rem;
+}
